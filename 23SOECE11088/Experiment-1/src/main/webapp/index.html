@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Experiment Servlet</title>
+   <style>
+       /* Styling the body to make it centered and visually appealing */
+       body {
+           font-family: Arial, sans-serif; /* Set a clean, readable font */
+           background-color: red; /* Light gray background for contrast */
+           margin: 0; /* Remove default margins */
+           display: flex; /* Use flexbox for centering content */
+           justify-content: center; /* Center content horizontally */
+           align-items: center; /* Center content vertically */
+           height: 100vh; /* Set full height of the viewport */
+       }
+       /* Styling for the container box */
+       .form-container {
+           background: white; /* White background for the container */
+           padding: 20px 30px; /* Add padding inside the container */
+           border-radius: 10px; /* Rounded corners for the container */
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+           text-align: center; /* Center the text inside the container */
+           width: 300px; /* Fixed width for the container */
+       }
+       /* Styling for the heading inside the container */
+       .form-container h2 {
+           color: #555; /* Dark gray text color for the heading */
+           margin-bottom: 20px; /* Add space below the heading */
+       }
+       /* Styling for the forms inside the container */
+       .form-container form {
+           margin: 10px 0; /* Add space between the forms */
+       }
+       /* Styling for the buttons */
+       .form-container button {
+           background-color: #FF0000; /* Red background color */
+           color: white; /* White text color */
+           border: none; /* Remove border */
+           padding: 10px 20px; /* Add padding for better appearance */
+           font-size: 16px; /* Set font size */
+           cursor: pointer; /* Show pointer cursor on hover */
+           border-radius: 5px; /* Rounded corners for the buttons */
+           width: 100%; /* Make buttons stretch to the container's width */
+           transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth transition effects */
+       }
+       /* Hover effect for the buttons */
+       .form-container button:hover {
+           background-color: #CC0000; /* Slightly darker red on hover */
+           transform: scale(1.05); /* Slightly enlarge the button */
+       }
+       /* Active effect for the buttons */
+       .form-container button:active {
+           background-color: #990000; /* Dark red on click */
+       }
+   </style>
+</head>
+<body>
+   <!-- Container to hold the form and buttons -->
+   <div class="form-container">
+       <!-- Heading inside the container -->
+       <h2>Click the buttons to make a request:</h2>
+       <!-- Form to send a POST request -->
+       <form action="Experiment" method="post">
+           <button type="submit">Send POST Request</button>
+       </form>
+       <!-- Form to send a GET request -->
+       <form action="Experiment" method="get">
+           <button type="submit">Send GET Request</button>
+       </form>
+   </div>
+</body>
+</html>
